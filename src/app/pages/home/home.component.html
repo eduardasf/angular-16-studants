@@ -1,0 +1,38 @@
+<div class="quadro-box">
+  <div class="input-box">
+    <label for="procurar">Procurar:</label>
+    <input
+      id="procurar"
+      type="text"
+      placeholder="Qual registro está buscando?"
+      (input)="search($event)"
+    />
+  </div>
+</div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Quadro</th>
+      <th>Pintor</th>
+      <th>Ano do Quadro</th>
+      <th>Valor</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let arte of artes">
+    <tr>
+      <td>{{ arte.nome_Quadro }}</td>
+      <td>{{ arte.nome_Pintor }}</td>
+      <td>{{ arte.ano_Quadro }}</td>
+      <td>{{ arte.valor }}</td>
+      <td>
+        <button>Editar</button>
+        <button>Excluír</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="quadro-box">
+  <button>Cadastrar novo quadro</button>
+</div>
