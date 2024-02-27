@@ -16,4 +16,8 @@ export class ArteService {
   GetArte() : Observable<Arte[]>{
     return this.http.get<Arte[]>(this.apiUrl);
   }
+
+  CreateArte(arte: Arte) : Observable<Arte[]>{
+    return this.http.post<Arte[]>(`${this.apiUrl}`, arte);
+  }
 }

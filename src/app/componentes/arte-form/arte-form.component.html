@@ -1,0 +1,28 @@
+<h1>Cadastrar Arte</h1>
+
+<form [formGroup]="arteForm" (ngSubmit)="submit()" #formDit="ngForm">
+    <div class="input_box">
+        <label for="a">Nome do Quadro:</label>
+        <input id="a" type="text" formControlName="nome_Quadro" placeholder="Insira o nome do quadro" required>
+    </div>
+
+    <div class="input_box">
+        <label for="b">Nome do Pintor:</label>
+        <input id="b" type="text" formControlName="nome_Pintor" placeholder="Insira o nome do quadro" required>
+    </div>
+
+    <div class="input_box">
+        <label for="c">Ano do Quadro:</label>
+        <input id="c" type="text" formControlName="ano_Quadro" placeholder="Insira o nome do quadro" required>
+    </div>
+
+    <div class="input_box">
+        <label for="d">Valor:</label>
+        <input id="d" type="text" formControlName="valor" placeholder="Insira o nome do quadro" required>
+    </div>
+
+    <div class="btn-box">
+        <button type="submit">Cadastrar</button>
+        <button>Voltar</button>
+    </div>
+</form>

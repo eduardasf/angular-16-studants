@@ -1,0 +1,53 @@
+/* Estilizando o formulário */
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Estilizando os títulos */
+h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Estilizando os campos de entrada e rótulos */
+.input_box {
+  margin-bottom: 20px;
+}
+
+.input_box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input_box input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilizando os botões */
+.btn-box {
+  text-align: center;
+}
+
+.btn-box button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #45a049;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-box button:last-child {
+  margin-right: 0;
+}
+
+.btn-box button:hover {
+  background-color: #0056b3;
+}
